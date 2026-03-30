@@ -1,0 +1,108 @@
+/* Center entire app */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+
+/* Sudoku grid container */
+.sudoku-game {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 3px;
+}
+
+
+/* Each Sudoku cell */
+.block {
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid black;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+  transition: 0.2s ease;
+}
+
+
+/* Original puzzle numbers (locked cells) */
+.block.fixed {
+  background: #eaeaea;
+  font-weight: bold;
+  cursor: default;
+}
+
+
+/* Selected cell highlight */
+.block.selected {
+  background: lightblue;
+}
+
+
+/* Wrong number highlight */
+.block.error {
+  color: red;
+}
+
+
+/* Number pad container */
+.number-pad {
+  justify-content: center;
+  display: flex;
+  gap: 6px;
+  width: 100vw;
+}
+
+
+/* Number buttons (1–9) */
+.num {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+  transition: 0.2s ease;
+}
+
+
+/* Hover effect for number buttons */
+.num:hover {
+  background: lightgray;
+}
+
+
+/* Thicker borders for 3×3 Sudoku boxes */
+
+/* Vertical thick borders */
+.block:nth-child(3n) {
+  border-right: 2px solid black;
+}
+
+.block:nth-child(9n + 1) {
+  border-left: 2px solid black;
+}
+
+
+/* Horizontal thick borders */
+.block:nth-child(n + 19):nth-child(-n + 27),
+.block:nth-child(n + 46):nth-child(-n + 54) {
+  border-bottom: 2px solid black;
+}
+
+.block:nth-child(n + 1):nth-child(-n + 9) {
+  border-top: 2px solid black;
+}
