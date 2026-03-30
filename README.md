@@ -98,5 +98,5 @@ Possible upgrades:
 
 ## 👨‍💻 Author
 
-Created by **The Typescripter**  
+Created by **Shubham Singh**  
 Built as a learning project to explore **grid logic, DOM interaction, and algorithmic puzzle generation in JavaScript**.
