@@ -3,7 +3,7 @@
 A fully interactive **Sudoku puzzle game** built using **HTML, CSS, and JavaScript**.  
 This project generates a random playable Sudoku board, allows number input via a number panel, and validates user moves in real time.
 
-
+![Alt text](Screenshot_2026-03-30-22-46-56-69_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 🔗 **Live CodePen:**  
 https://codepen.io/editor/qonspdqk-the-typescripter/pen/019d3ecc-e4eb-718b-b16b-ab0ede5cab30
